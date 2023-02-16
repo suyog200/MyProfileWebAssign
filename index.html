@@ -4,68 +4,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="Viewport" content="Width=Device-Width, Initial-Scale=1.0" />
     <link rel="Stylesheet" href="./css/style.css" />
-    <link rel="Preconnect" href="Https://Fonts.Googleapis.Com" />
-    <link rel="Preconnect" href="Https://Fonts.Gstatic.Com" crossorigin />
-    <link rel="Preconnect" href="Https://Fonts.Googleapis.Com" />
-    <link rel="Preconnect" href="Https://Fonts.Gstatic.Com" crossorigin />
     <link
-      href="Https://Fonts.Googleapis.Com/Css2?Family=Lato:wght@100;400;700&Family=Poppins:wght@200&Display=Swap"
-      rel="Stylesheet"
-    />
-    <link
-      href="Https://Fonts.Googleapis.Com/Css2?Family=Poppins:wght@200&Display=Swap"
-      rel="Stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
     <title>Suyog.co</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="flex items-centre justify-between">
-          <div class="left flex justify-right">
-            <div class="logo">
-              <img src="./images/logo.png" width="70px" alt="logo" />
-            </div>
-            <div>
-              <a href="#">Home</a>
-              <a href="#aboutSection">About</a>
-              <a href="#skills-section">Skills</a>
-              <a href="#contact-section">Contact</a>
-            </div>
-          </div>
-          <div class="right">
-            <button class="btn btn-primary">Contact</button>
-          </div>
-        </nav>
-      </div>
-      <div class="hero flex items-centre justify-between">
-        <div class="left flex-1 justify center">
-          <img src="./images/profile.png" alt="profile" />
+    <!--Header-->
+    <header class="l-header">
+      <nav class="nav bg-grid">
+        <div>
+          <a href="#" class="nav__logo">Suyog Chari</a>
         </div>
-        <div class="right flex-1">
-          <h6>Suyog Chari</h6>
-          <h1>I'm A Web<br /><span>Developer</span></h1>
-          <p>Seeking to improve and develope my skills in Web Development</p>
-          <div>
-            <button class="btn btn-secondary">Download cv</button>
-          </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
-    <!---About section-->
-    <section class="about" id="aboutSection">
-      <div class="container flex items-centre">
-        <div class="left flex-1 justify-right">
-          <img
-            src="./images/about_img.jpg"
-            alt="about image"
-            class="about_img"
-          />
+    <main class="l-main">
+      <!---Home-->
+      <section class="home" id="home">
+        <div class="home__container bg-grid">
+          <h1 class="home__title"><span>HE</span><br />LL0.</h1>
+
+          <img src="./images/profile.png" class="home__img" alt="" />
         </div>
-        <div class="right flex-1">
-          <h1>About<span>Me</span></h1>
-          <h3>Hello! i'm Suyog Chari</h3>
-          <p>
+      </section>
+    </main>
+    <!---About section-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about__container bg-grid">
+        <div class="about__img">
+          <img src="./images/about_img.jpg" alt="" />
+        </div>
+        <div>
+          <h2 class="about__subtitle">I'am Suyog Chari</h2>
+          <span class="about__profession">Student</span>
+          <p class="about__text">
             Currently im persuing my Master Of Computer Application degree at
             Goa University. I completed my six months of internship at Goa
             Institute of Management, as a Associate Web Developer. I have a
@@ -75,70 +77,149 @@
             hear about your project and see how I can help bring your vision to
             life!
           </p>
-          <div class="socials">
-            <a href="#"
-              ><img src="./images/icons8-github-30.png" width="40px"
-            /></a>
-            <a href="#"
-              ><img src="./images/icons8-instagram-30.png" width="40px"
-            /></a>
+          <div class="about__social">
+            <a href="#" class="about__social-icon"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="#" class="about__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
           </div>
         </div>
       </div>
     </section>
+    <!--education-->
+    <section class="education section" id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education__container bg-grid">
+        <div class="education__info">
+          <h3 class="education__subtitle">2022-present</h3>
+          <p class="education__text">Goa University, Panjim</p>
+        </div>
+        <div class="education__info">
+          <h3 class="education__subtitle">2018-2021</h3>
+          <p class="education__text">
+            Government College Of Arts, Science And Commerce, Khandola-Goa<br />B.Sc
+            in Computer Science
+          </p>
+        </div>
+        <div class="education__info">
+          <h3 class="education__subtitle">2016-2018</h3>
+          <p class="education__text">
+            Shri Bhumika Higher Secondary School, Parye
+          </p>
+        </div>
+        <div class="education__info">
+          <h3 class="education__subtitle">2006-2016</h3>
+          <p class="education__text">
+            St.Jhon of the cross high school, Sanquelim
+          </p>
+        </div>
+      </div>
+    </section>
     <!---Skills section-->
-    <section id="skills-section" class="skills">
-      <div class="container">
-        <h1 class="skills-head">Skills</h1>
-        <div class="card-grid">
-          <div class="card">
-            <img src="./images/java-logo-1.png" alt="java logo" />
-            <h2>Java</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
-              magni.
-            </p>
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills__container bg-grid">
+        <div class="skills__box">
+          <h3 class="skills__subtitle">Development</h3>
+          <span class="skills__name">HTML</span>
+          <span class="skills__name">Css</span>
+          <span class="skills__name">Javascript</span>
+          <span class="skills__name">Java</span>
+          <span class="skills__name">Nodejs</span>
+          <span class="skills__name">SQL</span>
+          <span class="skills__name">MongoDB</span>
+          <span class="skills__name">ASP.NET</span>
+          <span class="skills__name">Wordpress</span>
+        </div>
+        <div class="skills__img">
+          <img src="./images/achievement-g0375ae4d1_1920.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!---Experience-->
+    <section class="experience section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="experience__container bg-grid">
+        <div class="experience__info">
+          <h3 class="experience__subtitle">Associate Web Developer</h3>
+          <p>
+            Completed six months of internship at Goa Institute Of
+            Management(GIM), on project GoaApp
+          </p>
+          <a href="https://goa.app/" class="experience__link" target="_blank"
+            >Visit site</a
+          >
+        </div>
+      </div>
+    </section>
+    <!---Projects---->
+    <section class="project section" id="project">
+      <h2 class="section-title">Projects</h2>
+      <div class="project__container bg-grid">
+        <div class="project__img">
+          <img src="./images/Battle-ship.png" alt="" />
+          <div class="project__link">
+            <a
+              href="https://github.com/suyog200/Battleship-Game/tree/master"
+              class="project__link-name"
+              target="_blank"
+              >Battle Ship Game</a
+            >
           </div>
-          <div class="card">
-            <img src="./images/javascript-logo.png" alt="javascript logo" />
-            <h2>Javascript</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
-              magni.
-            </p>
+        </div>
+        <div class="project__img">
+          <img src="./images/tictac.png" alt="" />
+          <div class="project__link">
+            <a
+              href="https://github.com/suyog200/tic-tac-toe-web_game"
+              class="project__link-name"
+              target="_blank"
+              >Tic Tae to</a
+            >
           </div>
-          <div class="card">
-            <img src="./images/nodejs-icon-logo.png" alt="nodejs logo" />
-            <h2>Nodejs</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
-              magni.
-            </p>
+        </div>
+        <div class="project__img">
+          <img src="./images/hostel.png" alt="" />
+          <div class="project__link">
+            <a
+              href="https://github.com/suyog200/DSA-mini-Project"
+              class="project__link-name"
+              target="_blank"
+              >Hostel Management System</a
+            >
           </div>
         </div>
       </div>
     </section>
     <!---Contact section-->
-    <section id="contact-section" class="contact">
-      <div class="container">
-        <div class="content-box">
-          <div class="left">
-            <img src="./images/contact.jpg" alt="" />
-          </div>
-          <div class="right">
-            <h2>Contact Me</h2>
-            <input type="text" class="field" placeholder="Your Name" />
-            <input type="email" class="field" placeholder="Your Email" />
-            <input type="text" class="field" placeholder="Your Phone" />
-            <textarea class="field area" placeholder="Message"></textarea>
-            <button class="btn">Send</button>
-          </div>
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact__container bg-grid">
+        <div class="contact__info">
+          <h3 class="contact__subtitle">EMAIL</h3>
+          <span class="contact__text">suygchari@gmail.com</span>
+          <h3 class="contact__subtitle">PHONE</h3>
+          <span class="contact__text">+917768984419</span>
+          <h3 class="contact__subtitle">ADDRESS</h3>
+          <span class="contact__text">Sanquelim-Goa</span>
+        </div>
+        <!---form-->
+      </div>
+    </section>
+    <!---footer-->
+    <footer class="footer section">
+      <div class="footer__container bg-grid">
+        <div class="footer__data">
+          <h2 class="footer__title">Think.Design.Build</h2>
         </div>
       </div>
-      <footer class="footer">
-        <p>By Suyog</p>
-        <button class="btn">TOP</button>
-      </footer>
-    </section>
+    </footer>
+
+    <!--Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Main js-->
+    <script src="./js/script.js"></script>
   </body>
 </html>
